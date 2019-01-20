@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 0.5%, last 3 versions, Firefox ESR, not dead",
+        "modules": false,
+        "useBuiltIns": "entry"
+      }
+    ]
+  ]
+}

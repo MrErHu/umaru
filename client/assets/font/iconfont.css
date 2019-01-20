@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1547994316850'); /* IE9 */
+  src: url('iconfont.eot?t=1547994316850#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPQAAsAAAAACBwAAAODAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDOIMIATYCJAMUCwwABCAFhG0HSxsXB8gusG3kMwYpXKDhUY+oMhgOIh7439/T76N3OWAik6MrHJpc7ZKnUyGCbdYa/x/q+3G/NkSsLaLnCfV0JsCXt88/27E/3KtYiKKh0uAikPDMhcrPX/MqsFrv9A7PJjLMBHxfVzagSLANdHihWwOuO8Dq9+nwAiv2UOLECxO6Xdf6n8PFredZOH/bcplrUVEvwGgCZdleNyYdnegdyIn6DWNXXsTDBLSmqJe0rnfYjjJlxqqAcEBVBJSZ8ssyS9WCQcnBLNyRpo5X4zNu+78f/locOKKSGI/atKtHRu0/iB+vU84Mgz+BlfEeBwUJiyCZcKzUfkBKGF8kRatMT7UK0qpFcaxx5Uf34/X/kFi8I2Vr/sMjSLJIGDCKe7AKJTI/os0i8KOwSPzoWGR+vE6IuK9jtGhwDPIGYSZNjIKg9NVocp2NbXP8JXMgtTN3XjFrONu12Tzu9pLvENc98e27i8/ZVIl8MD0hTSFH6DxTQDmeHUGW4RAOw9ev836u/TjwnhuE24k7gJW5f7RqTd/5+mSeX7TUHCqhHJFKPyU2Gc7gYybH5TqqpHiC+wClmctvT9ck5uCHYTjB5zzt/Fxw50O55fdz+2/IcBAHZVtxpLksYTNoEmG85sOesn0E8docXfWn3e32Saja/EiVkt/kt0jy1sHmXCRvYEW/deKBTPyfAiX3EPdA3WculDzAyvvLJHl1kZBLLY5XGe0bnspSrwufTMuotPt8OB25IQx/up4skPDS3VSVnPSW1v/Sv3H64QRGC5LqLoNP++oG64aRUToD/ReF1oIfKGjZklWRYShZbrT5srNYfOvyqHS1+G3usT7GUU5oXUxQmxBDVJkMSW0WImMWQdFZCgO1ldBaqO94ZxwmRcgNFtgEEIx2A9FILyAZLY7ImHcoJvqDgdGBhNaOIF3YmRO62SUGAgcZi7NYlWiUWCaeHZRaQZkMCywp8vFOYJoawkadIZvqgyiwMbZoU4qJc4IJoxHcCx4H4TDFMUaDIHHdOOexRr2elH2RTqIRlG0tBgg4IMNEszCVhIoibmcuO/fzVkAxKUzAapoq7E6A0aijY0Y6hhaIPnm0VdO1fEYzRWHCcQRGMFQE1gusIGzGKSxWPi8ISDid8R7RmEZ61I60levmV0ae8RC0jOklxJBCDiUMVAf/Bi5IPGMImiYokFYPUw3SmhEaVBECAA==') format('woff2'),
+  url('iconfont.woff?t=1547994316850') format('woff'),
+  url('iconfont.ttf?t=1547994316850') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1547994316850#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-contact:before {
+  content: "\e602";
+}
+
+.icon-message:before {
+  content: "\e6c2";
+}
+
+.icon-close:before {
+  content: "\e605";
+}
+
+.icon-emoji:before {
+  content: "\e60b";
+}
+

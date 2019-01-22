@@ -1,0 +1,62 @@
+@import "../../less/index";
+
+.btn {
+  display: inline-block;
+  height: 32px;
+  white-space: nowrap;
+  font-size: 14px;
+  text-align: center;
+  padding: 0px 15px;
+  border-radius: 4px;
+  outline: 0;
+
+  &:hover, &:active{
+    border-color: @border-color-blue;
+    color: @font-color-blue;
+  }
+
+  .btn-icon + span {
+    margin-left: 8px;
+  }
+}
+
+.btn-lg {
+  font-size: 16px;
+  height: 40px;
+  padding: 0px 15px;
+}
+
+.btn-sm {
+  font-size: 14px;
+  height: 24px;
+  border-radius: 4px;
+  padding: 0px 7px;
+}
+
+.btn-primary{
+  color: @font-color-white;
+  border-color: @border-color-blue;
+  background-color: @background-color-blue;
+
+  &:hover, &:active{
+    background-color: @background-color-light-blue;
+    border-color: @border-color-light-blue;
+    color: @font-color-white;
+  }
+}
+
+.btn-danger{
+  color: @font-color-red;
+  border-color: @border-color-gray;
+  background-color: @background-color-light-gray;
+
+  &:hover, &:active{
+    color: @font-color-white;
+    background-color: @background-color-red;
+    border-color: @border-color-red;
+  }
+}
+
+.btn-block{
+  width: 100%a;
+}

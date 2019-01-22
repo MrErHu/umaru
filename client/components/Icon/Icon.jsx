@@ -3,11 +3,17 @@ import PropTypes from 'prop-types'
 
 import './icon.less'
 
-const Icon = ({ type, width, height, iconSize }) => {
+const Icon = ({ type, width, height, iconSize, className }) => {
   return (
-    <div className={'component-icon'} style={{ width, height, lineHeight: height + 'px' }}>
-      <i className={`iconfont icon-${type}`} style={{ fontSize: iconSize }} />
-    </div>
+    <i
+      className={`component-icon ${className} iconfont icon-${type}`}
+      style={{
+        width,
+        height,
+        fontSize: iconSize,
+        lineHeight: height + 'px'
+      }}
+    />
   )
 }
 
@@ -15,7 +21,8 @@ Icon.propTypes = {
   type: PropTypes.string.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
-  iconSize: PropTypes.number
+  iconSize: PropTypes.number,
+  className: PropTypes.string
 }
 
 export default Icon

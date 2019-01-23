@@ -1,17 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ClassNames from 'classnames'
 
 import './icon.less'
 
-const Icon = ({ type, width, height, iconSize, className }) => {
+const Icon = ({ type, className, spin, style = {} }) => {
+  const {
+    height = 24,
+    width = 24,
+    fontSize = 24,
+    ...otherStyle
+  } = style
+  const classname = ClassNames(['component-icon iconfont', `icon-${type}`, className, { 'icon-spin': spin }])
   return (
     <i
-      className={`component-icon ${className} iconfont icon-${type}`}
+      className={classname}
       style={{
         width,
         height,
-        fontSize: iconSize,
-        lineHeight: height + 'px'
+        fontSize,
+        lineHeight: height + 'px',
+        ...otherStyle
       }}
     />
   )
@@ -19,9 +28,8 @@ const Icon = ({ type, width, height, iconSize, className }) => {
 
 Icon.propTypes = {
   type: PropTypes.string.isRequired,
-  width: PropTypes.number,
-  height: PropTypes.number,
-  iconSize: PropTypes.number,
+  spin: PropTypes.bool,
+  style: PropTypes.object,
   className: PropTypes.string
 }
 

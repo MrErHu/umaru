@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "npx eslint client/ server/ --ext .js  --ext .jsx;exit 0;",
-    "lint-fix": "npx eslint --fix --ext .js --ext .jsx client/ server",
-    "client": "webpack-dev-server --config build/webpack.dev.conf.js"
+    "client": "webpack-dev-server --config build/webpack.dev.conf.js",
+    "ui": "webpack-dev-server --config build/webpack.ui.conf.js"
   },
   "keywords": [
     "Chat",
@@ -20,6 +19,10 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "@types/classnames": "^2.2.7",
+    "@types/react": "^16.8.7",
+    "@types/react-dom": "^16.8.2",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
@@ -35,7 +38,9 @@
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
+    "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
+    "typescript": "^3.3.3333",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",

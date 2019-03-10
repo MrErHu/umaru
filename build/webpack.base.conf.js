@@ -1,6 +1,3 @@
-/**
- * Created by lei.wang on 2019/1/14.
- */
 const path = require('path')
 const pages = require('../config/pages')
 const utils = require('./utils')
@@ -25,8 +22,14 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+  devtool: 'source-map',
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: ['awesome-typescript-loader']
+      },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -61,7 +64,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     alias: {
       root: resolve(''),
       '@': resolve('client'),

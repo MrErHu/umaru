@@ -1,6 +1,3 @@
-/**
- * Created by lei.wang on 2019/1/14.
- */
 import React from 'react'
 import ReactDom from 'react-dom'
 

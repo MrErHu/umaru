@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import Icon from '@/components/Icon'
+import Icon from '../Icon'
 
 class IconDemo extends Component {
   render () {

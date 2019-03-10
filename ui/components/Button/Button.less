@@ -33,24 +33,24 @@
   padding: 0px 7px;
 }
 
-.btn-primary{
+.btn-primary {
   color: @font-color-white;
   border-color: @border-color-blue;
   background-color: @background-color-blue;
 
-  &:hover, &:active{
+  &:hover, &:active {
     background-color: @background-color-light-blue;
     border-color: @border-color-light-blue;
     color: @font-color-white;
   }
 }
 
-.btn-danger{
+.btn-danger {
   color: @font-color-red;
   border-color: @border-color-gray;
   background-color: @background-color-light-gray;
 
-  &:hover, &:active{
+  &:hover, &:active {
     color: @font-color-white;
     background-color: @background-color-red;
     border-color: @border-color-red;
@@ -58,5 +58,18 @@
 }
 
 .btn-block{
-  width: 100%a;
+  width: 100%;
+}
+
+.btn-disabled {
+  color: rgba(0,0,0,0.25);
+  background-color: @background-color-light-gray;
+  border-color: @border-color-gray;
+  cursor: not-allowed;
+
+  &:hover, &:active {
+    color: rgba(0,0,0,0.25);
+    background-color: @background-color-light-gray;
+    border-color: @border-color-gray;
+  }
 }
